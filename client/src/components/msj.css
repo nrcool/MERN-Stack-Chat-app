@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+.msj{
+display: flex;
+justify-content: space-between;
+position: relative;
+margin-bottom: 20px;
+}
+.msj>.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    height: 75px;
+    border-radius: 50%;
+    position: relative;
+    left: 35px;
+    top: -20px;
+    z-index: 10;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 5px solid green;
+    background: rgb(8, 8, 1);
+}
+.image>span{
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+}
+.image img{
+    border-radius: 50%;
+}
+ .msj>.text{
+    background: rgba(1, 253, 1,0.7);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:20px;
+    margin:auto 10px auto 0px; 
+    padding: 15px 15px 10px 50px;
+    width: calc(100% - 60px);
+    position: relative;
+    border-radius: 5px 10px 10px 10px;
+    color: white;
+    box-shadow: 2px 2px 5px 2px black;
+}
+.msj>.text>span{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-size:12px;
+    color: white;
+}
+
+
+
+
+.mymsj{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+    }
+    .mymsj >.text{
+        background: rgba(87, 0, 72,0.7);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size:20px;
+        margin:auto 0px; 
+        padding: 15px;
+        width: calc(100% - 60px);
+        margin-left: 10px;
+        position: relative;
+        border-radius: 5px 10px 10px 10px;
+        box-shadow: 2px 2px 5px 2px black;
+    }
+    .mymsj>.text>span{
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        font-size:12px;
+    }
+    .mymsj>.image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        height: 75px;
+        border-radius: 50%;
+        position: relative;
+        left: -35px;
+        top: -25px;
+        z-index: 10;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        border: 5px solid green;
+        background: rgb(8, 8, 1);
+    }

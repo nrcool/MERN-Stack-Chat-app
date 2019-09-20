@@ -1,0 +1,86 @@
+.app {
+  height: 100vh;
+  background-image: url("./images/balls.jpg");
+  background-size: cover;
+  display: flex;
+}
+
+.input{
+  display: inline-block;
+  width: 85%;
+  font-size:25px;
+  padding: 10px;
+  margin-left: 15px;
+}
+.btn{
+  position: relative;
+  left: -50px;
+  top: 10px;
+  display: inline-block;
+  font-size:40px;
+  background: none;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+.userpage{
+  width: 250px;
+  border: 2px solid white;
+}
+.container{
+  width: 100%;
+}
+.msjcontainer{
+  padding-top: 30px;
+  height: 85vh;
+  overflow: auto;
+}
+
+
+.login{
+  position: absolute;
+  background: black;
+  width: 300px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+.logininput{
+  display: inline-block;
+  width: 250px;
+  font-size:30px;
+  margin:50px 25px 0px 25px;
+}
+.loginbtn{
+  display:block;
+  font-size:25px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:480px){
+
+.msjcontainer{
+  width: 100%;
+  padding: 10px;
+}
+.input{
+  display: inline-block;
+  width: 80%;
+  font-size:20px;
+  padding: 5px;
+  margin-left: 5px;
+}
+.btn{
+  position: relative;
+  left: -40px;
+  top: 5px;
+
+  font-size:23px;
+  background: none;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+}

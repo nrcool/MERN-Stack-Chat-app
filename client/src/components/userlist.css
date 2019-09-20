@@ -1,0 +1,42 @@
+.usersonline{
+    overflow-y: auto;
+    width: 200px;
+
+}
+.user{
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px white;
+}
+.user .name{
+    color: white;
+    font-size:20px;
+    margin: auto 0px;
+    padding: 10px;
+}
+.image1{
+    min-width: 50px;
+    border-radius: 50%;
+    border: 2px solid green;
+    overflow: hidden;
+}
+.ham{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+
+@media only screen and (max-width:480px){
+    .usersonline{
+        position: absolute;
+        z-index: 100;
+        top: 50px;
+        height: 85vh;
+        overflow-y: auto;
+    }
+    .ham{
+        display: block;
+    }
+}
