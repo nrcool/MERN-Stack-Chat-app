@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux"
 import io from "socket.io-client";
-const socket=io("http://localhost:4000")
+const socket=io()
 
 class Login extends Component {
 
