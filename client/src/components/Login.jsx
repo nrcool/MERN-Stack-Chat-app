@@ -14,7 +14,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch("http://localhost:4000/main/allmessages")
+        fetch(`${window.location.hostname}/main/allmessages`)
         .then(res=>res.json())
         .then(data=>{
           

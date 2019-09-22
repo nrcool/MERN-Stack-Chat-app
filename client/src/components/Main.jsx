@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket} from '@fortawesome/free-solid-svg-icons'
 import io from "socket.io-client";
 import {connect} from "react-redux"
-const socket=io("http://localhost:4000")
+const socket=io(window.location.hostname)
 
 class Main extends Component {
 
