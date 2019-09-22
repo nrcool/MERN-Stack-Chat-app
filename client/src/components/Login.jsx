@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux"
 import io from "socket.io-client";
-const socket=io()
+const socket=io("http://localhost:4000")
 
 class Login extends Component {
 
@@ -14,7 +14,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch("https://mern-stack-chatapp.herokuapp.com/main/allmessages")
+        fetch("http://localhost:4000/main/allmessages")
         .then(res=>res.json())
         .then(data=>{
           
