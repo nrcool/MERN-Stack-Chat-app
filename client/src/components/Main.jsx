@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket} from '@fortawesome/free-solid-svg-icons'
 import io from "socket.io-client";
 import {connect} from "react-redux"
-const socket=io(window.location.hostname)
+const socket=io("https://mern-stack-chatapp.herokuapp.com/")
 
 class Main extends Component {
 
