@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from "react-redux"
 import io from "socket.io-client";
 
-const socket=io()
+const socket=io(window.location.hostname)
 
 class Login extends Component {
 
