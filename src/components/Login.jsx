@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from "react-redux"
 import io from "socket.io-client";
 
-const socket=io(window.location.hostname)
+const socket=io('/')
 
 class Login extends Component {
 
@@ -15,7 +15,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch("https://naveedrazanaqvi.herokuapp.com/main/allmessages")
+        fetch("https://mern-stack-chatapp.herokuapp.com/main/allmessages")
         .then(res=>res.json())
         .then(data=>{
           
