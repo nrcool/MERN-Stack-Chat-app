@@ -21,7 +21,7 @@ const server=app.listen(port,()=>{
 
 //mongodb connection
 
-let Mongo_URI=`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PW}@cluster0-gntox.mongodb.net/test?retryWrites=true&w=majority`
+let Mongo_URI=`mongodb+srv://nrcool:raza7214@cluster0-gntox.mongodb.net/test?retryWrites=true&w=majority`
 mongoose.connect(Mongo_URI,{ useNewUrlParser: true, useUnifiedTopology: true })
 
 if(process.env.NODE_ENV==='production'){
