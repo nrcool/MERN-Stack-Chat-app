@@ -33,7 +33,7 @@ if(process.env.NODE_ENV==='production'){
  let users=[]; 
 const io=socket(server);
 
-app.get("/main/allmessages",(req,res)=>{
+app.get("/",(req,res)=>{
 DataBase.findById({_id:"5d7d23ce60fc407143a7099d"}).then(db=>{
     res.send(db)
 })
