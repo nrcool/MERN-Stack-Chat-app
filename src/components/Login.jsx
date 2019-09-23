@@ -3,7 +3,7 @@ import {connect} from "react-redux"
 import io from "socket.io-client";
 
 console.log(window.location.host)
-const socket=io(window.location.host) 
+const socket=io(`https://${window.location.host}/`) 
 
 
 class Login extends Component {
@@ -17,7 +17,8 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch("https://"+window.location.host+"/")
+      /*   fetch("https://"+window.location.host+"/") */
+        fetch(`https://${window.location.host}/`)
         .then(res=>res.json())
         .then(data=>{
          /*  console.log(data) */
