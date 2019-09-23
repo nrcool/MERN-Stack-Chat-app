@@ -3,7 +3,7 @@ const socket=require("socket.io");
 const bodyParser=require("body-parser");
 const app=express();
 const mongoose=require("mongoose");
-const DataBase=require("./mongoDB/schema.js.js.js")
+const DataBase=require("./mongoDB/schema.js")
 require("dotenv").config();
 const path=require("path")
 
@@ -20,7 +20,7 @@ const server=app.listen(port,()=>{
 })
 
 //mongodb connection
-
+mongoose.Promise=global.Promise;
 let Mongo_URI=`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PW}@cluster0-gntox.mongodb.net/test?retryWrites=true&w=majority`
 mongoose.connect(Mongo_URI,{ useNewUrlParser: true, useUnifiedTopology: true })
 
