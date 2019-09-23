@@ -18,7 +18,7 @@ class Login extends Component {
         fetch("https://mern-stack-chatapp.herokuapp.com/main/allmessages")
         .then(res=>res.json())
         .then(data=>{
-          
+          console.log(data)
           this.props.loadinginitialdata(data)})
         this.setState({loginname:e.target.value},()=>{
 
