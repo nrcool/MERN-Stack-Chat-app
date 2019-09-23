@@ -28,6 +28,9 @@ if (process.env.NODE_ENV === 'production') {
     app.get('/', (req, res) => {
         res.sendFile(path.join(__dirname, "build", "index.html"))
     })
+    app.get('/main', (req, res) => {
+        res.sendFile(path.join(__dirname, "build", "index.html"))
+    })
     app.get("/allmessages", (req, res) => {
         DataBase.findById({ _id: "5d7d23ce60fc407143a7099d" }).then(db => {
             res.send(db)
