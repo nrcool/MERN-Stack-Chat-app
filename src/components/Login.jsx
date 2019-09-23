@@ -15,7 +15,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch(window.location.href+"/main/allmessages")
+        fetch("https://naveedrazanaqvi.herokuapp.com/main/allmessages")
         .then(res=>res.json())
         .then(data=>{
           
