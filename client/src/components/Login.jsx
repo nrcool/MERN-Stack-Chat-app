@@ -14,7 +14,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch(window.location.hostname+"https://mern-stack-chatapp.herokuapp.com/main/allmessages")
+        fetch("https://mern-stack-chatapp.herokuapp.com/main/allmessages")
         .then(res=>res.json())
         .then(data=>{
           
