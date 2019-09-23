@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from "react-redux"
 import io from "socket.io-client";
 
-const socket=io("https://mern-stack-chatapp.herokuapp.com/")
+const socket=io("https://mern-stack-chatapp.herokuapp.com")
 
 class Login extends Component {
 
