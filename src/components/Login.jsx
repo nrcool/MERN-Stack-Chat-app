@@ -17,7 +17,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch(window.location.host)
+        fetch("https://"+window.location.host+"/")
         .then(res=>res.json())
         .then(data=>{
          /*  console.log(data) */
