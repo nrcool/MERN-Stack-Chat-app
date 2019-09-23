@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import {connect} from "react-redux"
 import io from "socket.io-client";
 
-let status="online";
-let host="http://localhost:4000/"
-if(status==="online"){
- host="https://mern-stack-chatapp.herokuapp.com/" 
-}
-const socket=io(host) 
+console.log(window.location.host)
+const socket=io(window.location.host) 
 
 
 class Login extends Component {
@@ -21,7 +17,7 @@ class Login extends Component {
         
       }
       loginUser=(e)=>{ 
-        fetch(host)
+        fetch(window.location.host)
         .then(res=>res.json())
         .then(data=>{
          /*  console.log(data) */
