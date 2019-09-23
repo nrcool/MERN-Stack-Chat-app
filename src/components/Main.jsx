@@ -6,7 +6,7 @@ import { faRocket} from '@fortawesome/free-solid-svg-icons'
 import io from "socket.io-client";
 import {connect} from "react-redux";
 
-const socket=io('/')
+const socket=io()
 
 class Main extends Component {
 
