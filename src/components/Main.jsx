@@ -57,7 +57,7 @@ componentDidMount(){
         <div className="container">
       <div className="msjcontainer" ref="scrollme">
        {this.props.data.messages.map((msj,i)=>{
-         return(  <Msj key={i} classN={this.props.data.username===msj.name?"mymsj":"msj"} username={msj.name} image={msj.image} message={msj.msj} time={new Date().toLocaleTimeString()}/> )
+         return(  <Msj key={i} classN={this.props.data.username===msj.name?"mymsj":"msj"} username={msj.name} image={msj.image} message={msj.msj} time={msj.time}/> )
        })}
         </div> 
         <form onSubmit={this.sendmsj} className="form">
